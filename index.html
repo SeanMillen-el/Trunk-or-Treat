@@ -1,69 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>trunkortreat</title>
+
+<head>
+    <title>Trunk or Treat</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
+<body>
     <header>
-      <!-- place navbar here -->
-      <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark"">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg  navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img class="icon" src="imgs/icon-pumpkin.jpg">
+              </a>
+      
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon justify-content-center"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav ms-auto me-4 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
+                  <a class="nav-link navhover navText" aria-current="page" href="index.html">Home Page </a>
+                </li>
+                <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
+                  <a class="nav-link navhover navText" href="trunk-showcase.html">Showcase</a>
+                </li>
+                <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
+                  <a class="nav-link navhover navText" href="schedule.html">Schedule</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!--<div class="content text-center"><div class="logo"><img src="images/Screenshot 2024-10-10 143154.png" alt="" srcset=""></div>-->
     </header>
     <main>
-      <body class="container-fluid"></body>
+        <div class="banner w-100 mb-5 vh-80 d-flex justify-content-center align-items-center">
+            <h1 class="display-1 text-align-center justify-content-center">
+                Marlboro High School <br>Trunk or Treat
+            </h1>
+            <button class="infoBtn" id="moreBtn"> 
+              <h3 class="card__title">More Info</h3>
+          </button>
+      </div>
+  
+      <div id="popup" class="popup">
+          <span class="close" id="closeButton">&times;</span>
+          <img src="flyer.png" id="closeBox">
+      </div>
     </main>
     <footer>
-      <!-- place footer here -->
+        <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
 </html>
